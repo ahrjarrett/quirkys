@@ -47,22 +47,12 @@ gulp.task('develop', function () {
 		this.stdout.on('data', function (chunk) {
 			if(/^Express server listening on port/.test(chunk)){
 				livereload.changed(__dirname);
-			}
+		}
 		});
 		this.stdout.pipe(process.stdout);
 		this.stderr.pipe(process.stderr);
 	});
 });
-
-// gulp.task('bundle', function(){
-//   return browserify('./public/js/main.js')
-//     .bundle()
-//     .on('error', function(e) {
-//       gutil.log(e);
-//     })
-//     .pipe(source('bundle.js'))
-//     .pipe(gulp.dest(config.js));
-// });
 
 gulp.task('scripts', ['vet'], function(){
 

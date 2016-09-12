@@ -2,15 +2,39 @@ include ./includes/layout
 include ./mixins/mixins
 
 block content
-  //- +nav()
-  #nav
-    .nav
-      .nav-top
-        .logo-wrapper
-        ul
-          li link 1
-          li link 2
-          li link 3
-  h1= title
-    p Welcome to #{title}
-
+	body
+		nav.qc-nav
+			header.qc-nav-top-wrapper
+				.qc-nav-top.full-width
+					.qc-logo-wrap
+						.qc-logo Quirky’s Coffee
+					.qc-nav-right-wrap
+						.my-account
+							a(href='#') My Account
+						.login-register
+							.login
+								a(href='#') Login
+							.register
+								a(href='#') Register
+						.shopping-cart
+							.cart-icon cart
+							.cart-digit 0
+						.search
+							.search-icon search
+			header.qc-nav-bottom-wrap
+				.qc-nav-bottom.full-width
+					.qc-main-nav
+						.menu
+							ul
+								li.nav-item
+									a.nav-link(href='#') Buy Coffee
+								li.nav-item
+									a.nav-link(href='#') Buy Coffee Syrup
+								li.nav-item
+									a.nav-link(href='#') Shop Roast Levels
+								li.nav-item
+									a.nav-link(href='#') About Quirky’s
+								li.nav-item
+									a.nav-link(href='#') Brewers & More
+								li.nav-item
+									a.nav-link(href='#') Syrup Recipes
