@@ -1,8 +1,12 @@
 // BASE
 body {
 	font-family: gotham-medium;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
+p {
+	margin: 0;
+}
 a:hover {
 	list-decoration: none;
 	color: #91cfcd
@@ -16,6 +20,13 @@ a {
 }
 ul {
 	margin: 0;
+}
+li {
+	list-style: none;
+}
+
+.main-content {
+	margin: 0 0 60px;
 }
 
 .qc-logo-wrap {
@@ -58,7 +69,7 @@ ul {
 .qc-nav-bottom-wrap {
 	display: flex;
 	height: 50px;
-	border-bottom: 1px solid #d0d0d0;
+	// border-bottom: 1px solid #d0d0d0;
 }
 
 .qc-nav-top {
@@ -97,9 +108,6 @@ ul {
 	ul {
 		display: flex;
 	}
-	li {
-		list-style: none;
-	}
 }
 .qc-main-nav {
 	height: 100%;
@@ -127,7 +135,7 @@ ul {
 	width: 100%;
 }
 .stripes {
-	height: 6px;
+	height: 9px;
 	background: linear-gradient(135deg, 
 		#fff .1em /* black corner */, 
 		#d0d0d0 0, #d0d0d0 calc(50% - .1em) /* blue stripe */, 
@@ -137,6 +145,7 @@ ul {
 	);
 	background-size: 0.5em 0.5em;
 	// background-size: .75em/sqrt(2) .75em/sqrt(2);
+	border-top: 1px solid #d0d0d0;
 }
 
 .shopping-cart, .search {
@@ -160,6 +169,7 @@ ul {
   content: "\e901";
 }
 .cart-digit {
+	font-family: $serifBlack;
 	color: #f5c685;
 	margin-left: 4px;
 	margin-right: 8px;
@@ -173,4 +183,69 @@ ul {
 	img {
 		background-size: cover;
 	}
+}
+
+.col-head {
+	font-family: $serifBlack;
+	color:rgb(138,134,130);
+	text-transform: uppercase;
+}
+.footer-content-wrap{
+	margin-top: 15px;
+}
+.footer {
+
+	a {
+		font-size: 13px;
+	}
+}
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.copy {
+	color: #8a8682;
+	font-size: 14px;
+	text-align: center;
+	padding: 15px 0;
+	width:100%;
+	border-top:1px solid #b1b1b1;
+}
+
+form.join-newsletter {
+	label {
+		font-family: $serifBlack;
+		font-size:16px;
+		text-transform: uppercase;
+		color: rgb(138,134,130);
+	}
+	input {
+		height: 29px;
+		padding: 0;
+		padding-left:10px;
+		border: 1px solid #e8e8e8;
+	}
+	button {
+		background-color:rgb(145, 207, 205);
+		color: #fff;
+		height: 29px;
+		width: 40px;
+		&:hover{
+			background-color:rgb(127,199,197);
+		}
+	}
+}
+
+.subscribe-social{
+	padding-right: 20px;
+	border-right: 1px solid #d0d0d0;
+}
+
+.col00 {
+
+}
+.col01, .col02, .col03 {
+
 }
