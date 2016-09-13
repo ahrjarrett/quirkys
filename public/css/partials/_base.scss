@@ -18,8 +18,7 @@ ul {
 	margin: 0;
 }
 
-
-.qc-logo-wrapper {
+.qc-logo-wrap {
 	display: flex;
 }
 .qc-logo {
@@ -28,8 +27,15 @@ ul {
   font-family: obsidian-roman;
 	font-size: 3rem;
 	text-transform: none;
-	line-height: 1.6;
-	color: #3e3934;
+	line-height: 1.5;
+	a {
+		color: #3e3934;
+			transition: all 0.1s linear;
+		&:hover {
+			color: #4b2d1e;
+			transition: all 0.1s linear;
+		}
+	}
 }
 
 // FONTS
@@ -45,7 +51,7 @@ ul {
 	}
 }
 
-.qc-nav-top-wrapper {
+.qc-nav-top-wrap {
 	margin: 0 auto;
 	border-bottom: 1px solid #d0d0d0;
 }
@@ -74,12 +80,16 @@ ul {
 	}
 	.register {
 		margin-left: 15px;
+		margin-right: 15px;
 		&:before{
 			content: '|';
 			color: #d0d0d0;
 			margin-right: 15px;
 		}
 	}
+}
+.my-account {
+	margin-right: 15px;
 }
 
 .qc-nav-bottom {
@@ -110,4 +120,47 @@ ul {
 		li {
 		}
 	}
+}
+
+.stripes-wrap {
+	// height: 50px;
+	width: 100%;
+}
+.stripes {
+	height: 6px;
+	background: linear-gradient(135deg, 
+		#fff .1em /* black corner */, 
+		#d0d0d0 0, #d0d0d0 calc(50% - .1em) /* blue stripe */, 
+		#fff 0, #fff calc(50% + .1em) /* black stripe */, 
+		#d0d0d0 0, #d0d0d0 calc(100% - .1em) /* blue stripe */, 
+		#fff 0 /* black corner */
+	);
+	background-size: 0.5em 0.5em;
+	// background-size: .75em/sqrt(2) .75em/sqrt(2);
+}
+
+.shopping-cart, .search {
+	color:#909090;
+	cursor: pointer;
+	&:hover {
+	color: #91cfcd;
+	}
+}
+.search {
+	font-size: 1.75em;	
+}
+.shopping-cart {
+	font-size: 2em;
+}
+
+.icon-search:before {
+  content: "\e900";
+}
+.icon-shopping_cart:before {
+  content: "\e901";
+}
+.cart-digit {
+	color: #f5c685;
+	margin-left: 4px;
+	margin-right: 8px;
 }
