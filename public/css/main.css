@@ -296,10 +296,10 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding: 0 15px; }
+  .footer-content .col00 {
+    margin-right: 25px; }
 
 .copy {
   color: #8a8682;
@@ -308,6 +308,13 @@ li {
   padding: 15px 0;
   width: 100%;
   border-top: 1px solid #b1b1b1; }
+
+.footer-right-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .footer-right-wrap .footer-right-col {
+    margin-right: 50px; }
 
 form.join-newsletter label {
   font-family: "Sentinel-Black", serif;

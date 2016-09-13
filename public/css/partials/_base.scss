@@ -201,8 +201,12 @@ li {
 }
 .footer-content{
 	display: flex;
-	justify-content: space-between;
+	// justify-content: space-between;
 	margin-bottom: 15px;
+  padding: 0 15px;
+	.col00 {
+		margin-right: 25px;
+	}
 }
 
 .copy {
@@ -212,6 +216,13 @@ li {
 	padding: 15px 0;
 	width:100%;
 	border-top:1px solid #b1b1b1;
+}
+
+.footer-right-wrap {
+	display: flex;
+	.footer-right-col {
+		margin-right: 50px;
+	}
 }
 
 form.join-newsletter {
