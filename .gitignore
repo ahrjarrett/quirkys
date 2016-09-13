@@ -1,3 +1,4 @@
-/node_modules
-/.sass_cache
-/bower_components
+node_modules
+.sass_cache
+bower_components
+public/fonts/.DS_Store
