@@ -192,7 +192,7 @@ li {
   list-style: none; }
 
 .main-content {
-  margin: 0 0 30px; }
+  margin: 0 0 45px; }
 
 .qc-logo-wrap {
   display: -webkit-box;
@@ -326,6 +326,10 @@ li {
   background-size: 0.5em 0.5em;
   border-top: 1px solid #d0d0d0; }
 
+.stripes-bottom {
+  border-bottom: 1px solid #d0d0d0;
+  border-top: none; }
+
 .shopping-cart, .search {
   color: #909090;
   cursor: pointer; }
@@ -347,7 +351,7 @@ li {
 
 .hero {
   padding: 25px 15px 0;
-  height: 700px;
+  height: 100%;
   width: 100%; }
   .hero img {
     background-size: cover; }
@@ -394,9 +398,10 @@ form.join-newsletter label {
   color: #8a8682; }
 form.join-newsletter input {
   height: 32px;
-  padding: 0;
-  padding-left: 10px;
-  border: 1px solid #e8e8e8; }
+  padding: 2px 0 0 10px;
+  border: 1px solid #e8e8e8;
+  width: 100%;
+  font-size: .9em; }
   form.join-newsletter input:focus {
     outline-style: none;
     border-color: #91cfcd; }
