@@ -12,6 +12,12 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'numbers';
+  src: url("../../fonts/numbers/numbers.eot");
+  src: url("../../fonts/numbers/numbers.woff") format("woff"), url("../../fonts/numbers/numbers.ttf") format("truetype"), url("../../fonts/numbers/numbers.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'qc-icons';
   src: url("../../fonts/icons/iconsicomoon.eot?fvpvn2");
   src: url("../../fonts/icons/icomoon.eot?fvpvn2#iefix") format("embedded-opentype"), url("../../fonts/icons/icomoon.ttf?fvpvn2") format("truetype"), url("../../fonts/icons/icomoon.woff?fvpvn2") format("woff"), url("../../fonts/icons/icomoon.svg?fvpvn2#icomoon") format("svg");
@@ -27,6 +33,66 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-drop:before {
+  content: "\e902"; }
+
+.icon-help-with-circle:before {
+  content: "\e903"; }
+
+.icon-info-with-circle:before {
+  content: "\e904"; }
+
+.icon-shopping-cart:before {
+  content: "\e905"; }
+
+.icon-star-outlined:before {
+  content: "\e906"; }
+
+.icon-stopwatch:before {
+  content: "\e907"; }
+
+.icon-thumbs-down:before {
+  content: "\e908"; }
+
+.icon-thumbs-up:before {
+  content: "\e909"; }
+
+.icon-typing:before {
+  content: "\e90a"; }
+
+.icon-water:before {
+  content: "\e90b"; }
+
+.icon-yelp:before {
+  content: "\e90c"; }
+
+.icon-facebook-with-circle:before {
+  content: "\e90d"; }
+
+.icon-google-with-circle:before {
+  content: "\e90e"; }
+
+.icon-instagram-with-circle:before {
+  content: "\e90f"; }
+
+.icon-pinterest-with-circle:before {
+  content: "\e910"; }
+
+.icon-twitter-with-circle:before {
+  content: "\e911"; }
+
+.icon-youtube-with-circle:before {
+  content: "\e912"; }
+
+.icon-search:before {
+  content: "\e900"; }
+
+.icon-shopping_cart:before {
+  content: "\e901"; }
+
+.icon-mail:before {
+  content: "\e913"; }
 
 @font-face {
   font-family: 'Sentinel-Light';
@@ -262,16 +328,11 @@ li {
 .shopping-cart {
   font-size: 2em; }
 
-.icon-search:before {
-  content: "\e900"; }
-
-.icon-shopping_cart:before {
-  content: "\e901"; }
-
 .cart-digit {
   font-family: "Sentinel-Black", serif;
-  color: #f5c685;
-  margin-left: 4px;
+  font-size: .9em;
+  color: #7fc7c5;
+  margin-left: 1px;
   margin-right: 8px; }
 
 .hero {
@@ -307,7 +368,7 @@ li {
   text-align: center;
   padding: 15px 0;
   width: 100%;
-  border-top: 1px solid #b1b1b1; }
+  border-top: 1px solid #d0d0d0; }
 
 .footer-right-wrap {
   display: -webkit-box;
@@ -322,18 +383,52 @@ form.join-newsletter label {
   text-transform: uppercase;
   color: #8a8682; }
 form.join-newsletter input {
-  height: 29px;
+  height: 32px;
   padding: 0;
   padding-left: 10px;
   border: 1px solid #e8e8e8; }
+  form.join-newsletter input:focus {
+    outline-style: none;
+    border-color: #91cfcd; }
 form.join-newsletter button {
   background-color: #91cfcd;
   color: #fff;
-  height: 29px;
-  width: 40px; }
+  height: 32px;
+  width: 44px; }
   form.join-newsletter button:hover {
     background-color: #7fc7c5; }
+  form.join-newsletter button .icon-mail {
+    font-size: 1.25em; }
+
+.input-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .subscribe-social {
   padding-right: 20px;
   border-right: 1px solid #d0d0d0; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .6em; }
+  .social span a {
+    font-size: 2em;
+    margin-left: .4em; }
+
+.facebook {
+  color: #3B5998; }
+  .facebook:hover {
+    color: #3B5998; }
+
+.twitter {
+  color: #55ACEE; }
+  .twitter:hover {
+    color: #55ACEE; }
+
+.instagram {
+  color: #c2318c; }
+  .instagram:hover {
+    color: #c2318c; }

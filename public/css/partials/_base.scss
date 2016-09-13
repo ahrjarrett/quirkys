@@ -162,16 +162,12 @@ li {
 	font-size: 2em;
 }
 
-.icon-search:before {
-  content: "\e900";
-}
-.icon-shopping_cart:before {
-  content: "\e901";
-}
 .cart-digit {
+	// font-family: numbers;
 	font-family: $serifBlack;
-	color: #f5c685;
-	margin-left: 4px;
+	font-size: .9em;
+	color: #7fc7c5;
+	margin-left: 1px;
 	margin-right: 8px;
 }
 
@@ -215,7 +211,7 @@ li {
 	text-align: center;
 	padding: 15px 0;
 	width:100%;
-	border-top:1px solid #b1b1b1;
+	border-top:1px solid #d0d0d0;
 }
 
 .footer-right-wrap {
@@ -233,20 +229,30 @@ form.join-newsletter {
 		color: rgb(138,134,130);
 	}
 	input {
-		height: 29px;
+		height: 32px;
 		padding: 0;
 		padding-left:10px;
 		border: 1px solid #e8e8e8;
+		&:focus{
+			outline-style: none;
+			border-color: #91cfcd;
+		}
 	}
 	button {
 		background-color:rgb(145, 207, 205);
 		color: #fff;
-		height: 29px;
-		width: 40px;
+		height: 32px;
+		width: 44px;
 		&:hover{
 			background-color:rgb(127,199,197);
 		}
+		.icon-mail{
+			font-size:1.25em;
+		}
 	}
+}
+.input-btn-wrap{
+	display:flex;
 }
 
 .subscribe-social{
@@ -259,4 +265,31 @@ form.join-newsletter {
 }
 .col01, .col02, .col03 {
 
+}
+
+.social {
+	display:flex;
+	margin-top: .6em;
+	span a {
+		font-size: 2em;
+		margin-left: .4em;
+	}
+}
+.facebook{
+	color:#3B5998;
+	&:hover {
+		color:#3B5998;
+	}
+}
+.twitter{
+	color:#55ACEE;
+	&:hover {
+		color:#55ACEE;
+	}
+}
+.instagram{
+	color:#c2318c;
+	&:hover {
+		color:#c2318c;
+	}
 }

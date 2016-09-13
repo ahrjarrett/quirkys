@@ -33,6 +33,15 @@
 }
 
 @font-face {
+	font-family: 'numbers';
+	src: url('../../fonts/numbers/numbers.eot');
+	src: url('../../fonts/numbers/numbers.woff') format('woff'), url('../../fonts/numbers/numbers.ttf') format('truetype'), url('../../fonts/numbers/numbers.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
   font-family: 'qc-icons';
   src:  url('../../fonts/icons/iconsicomoon.eot?fvpvn2');
   src:  url('../../fonts/icons/icomoon.eot?fvpvn2#iefix') format('embedded-opentype'),
@@ -52,6 +61,66 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-drop:before {
+  content: "\e902";
+}
+.icon-help-with-circle:before {
+  content: "\e903";
+}
+.icon-info-with-circle:before {
+  content: "\e904";
+}
+.icon-shopping-cart:before {
+  content: "\e905";
+}
+.icon-star-outlined:before {
+  content: "\e906";
+}
+.icon-stopwatch:before {
+  content: "\e907";
+}
+.icon-thumbs-down:before {
+  content: "\e908";
+}
+.icon-thumbs-up:before {
+  content: "\e909";
+}
+.icon-typing:before {
+  content: "\e90a";
+}
+.icon-water:before {
+  content: "\e90b";
+}
+.icon-yelp:before {
+  content: "\e90c";
+}
+.icon-facebook-with-circle:before {
+  content: "\e90d";
+}
+.icon-google-with-circle:before {
+  content: "\e90e";
+}
+.icon-instagram-with-circle:before {
+  content: "\e90f";
+}
+.icon-pinterest-with-circle:before {
+  content: "\e910";
+}
+.icon-twitter-with-circle:before {
+  content: "\e911";
+}
+.icon-youtube-with-circle:before {
+  content: "\e912";
+}
+.icon-search:before {
+  content: "\e900";
+}
+.icon-shopping_cart:before {
+  content: "\e901";
+}
+.icon-mail:before {
+  content: "\e913";
 }
 
 

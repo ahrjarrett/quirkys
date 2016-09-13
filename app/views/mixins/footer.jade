@@ -8,9 +8,13 @@ mixin footer()
 					.subscribe
 						form.join-newsletter
 							label Join Quirky’s Newsletter
-							input(placeholder='Email Address')
-							button >>
+							.input-btn-wrap
+								input(placeholder='Email Address')
+								button: span.icon-mail
 					.social
+							span: a(href='#').facebook.icon-facebook-with-circle
+							span: a(href='#').twitter.icon-twitter-with-circle
+							span: a(href='#').instagram.icon-instagram-with-circle
 				.footer-right-wrap
 					.col01.footer-right-col
 						p.col-head Quirky’s Coffee
