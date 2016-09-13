@@ -331,3 +331,10 @@ ul {
   color: #f5c685;
   margin-left: 4px;
   margin-right: 8px; }
+
+.hero {
+  padding: 30px 15px;
+  height: 600px;
+  width: 100%; }
+  .hero img {
+    background-size: cover; }

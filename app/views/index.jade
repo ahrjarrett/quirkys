@@ -3,41 +3,7 @@ include ./mixins/mixins
 
 block content
 	body
-		nav.qc-nav
-			header.qc-nav-top-wrap
-				.qc-nav-top.full-width
-					.qc-logo-wrap
-						.qc-logo
-							a(href='/') Quirky’s Coffee
-					.qc-nav-right-wrap
-						.my-account
-							a(href='#') My Account
-						.login-register
-							.login
-								a(href='#') Login
-							.register
-								a(href='#') Register
-						.shopping-cart
-							span.icon-shopping_cart
-							.cart-digit 0
-						.search
-							span.icon-search
-			header.qc-nav-bottom-wrap
-				.qc-nav-bottom.full-width
-					.qc-main-nav
-						.menu
-							ul
-								li.nav-item
-									a.nav-link(href='#') Buy Coffee
-								li.nav-item
-									a.nav-link(href='#') Buy Coffee Syrup
-								li.nav-item
-									a.nav-link(href='#') Shop Roast Levels
-								li.nav-item
-									a.nav-link(href='#') Brewers & More
-								li.nav-item
-									a.nav-link(href='#') Syrup Recipes
-								li.nav-item
-									a.nav-link(href='#') About Quirky’s
-			.stripes-wrap
-				.stripes
+		+nav()
+		.main-content
+			.hero.full-width
+				img(src='images/img01.jpg')
