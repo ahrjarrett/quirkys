@@ -213,10 +213,6 @@ li {
     color: #3e3934;
     -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear; }
-    .qc-logo a:hover {
-      color: #4b2d1e;
-      -webkit-transition: all 0.1s linear;
-      transition: all 0.1s linear; }
 
 .qc-nav {
   text-transform: uppercase;
